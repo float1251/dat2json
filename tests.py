@@ -24,8 +24,7 @@ class Dat2JsonTest(unittest.TestCase):
         expect(json["name"]).to.eql("名前")
         expect(json["mail"]).to.eql("メール欄")
         expect(json["comment"]).to.eql(" 本文 ")
-        expect(json["datatime"]).to.eql("年/月/日（曜） 時:分:秒.下二桁（無い板もある）")
-        expect(json["id"]).to.eql("hogehoge0")
+        expect(json["datatime"]).to.eql("年/月/日（曜） 時:分:秒.下二桁（無い板もある） ID:hogehoge0")
         expect(json["title"]).to.eql("スレタイ")
 
         json = ret[1]
@@ -33,8 +32,7 @@ class Dat2JsonTest(unittest.TestCase):
         expect(json["name"]).to.eql("名前")
         expect(json["mail"]).to.eql("メール欄")
         expect(json["comment"]).to.eql(" 本文 ")
-        expect(json["datatime"]).to.eql("年/月/日（曜） 時:分:秒.下二桁（無い板もある）")
-        expect(json["id"]).to.eql("hogehoge0")
+        expect(json["datatime"]).to.eql("年/月/日（曜） 時:分:秒.下二桁（無い板もある） ID:hogehoge0")
         expect(json).to_not.have.ownProperty("title")
 
 if __name__ == "__main__":
