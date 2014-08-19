@@ -2,7 +2,8 @@ dat2json
 ==========
 This is library to convert json from 2ch dat file.
 
-ex:
+Example
+^^^^^^^^^
 
 .. code-block:: python
 
